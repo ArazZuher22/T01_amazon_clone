@@ -30,6 +30,171 @@ header ul li a:hover {
     border-style: ridge;
     border-color:#FFFFFF;
 }
+/* Top Bar */
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #131921;
+    color: white;
+}
+
+.location {
+	color:#fff;
+    display: flex;
+    align-items: center;
+    
+}
+
+.location-icon {
+    fill: white;  /* Change icon color to white */
+    margin-right: 5px;
+	margin-bottom:5px;
+}
+
+
+.location span {
+    font-size: 14px;
+}
+.language {
+	color:#fff;
+}
+
+.language i {
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+	
+}
+
+#language-dropdown {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    color: #000;
+    list-style: none;
+    padding: 0;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    z-index: 100;
+}
+
+#language-dropdown li {
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+#language-dropdown li:hover {
+    background-color: #f1f1f1;
+}
+
+/* Main Header */
+.header-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #131921;
+}
+
+.logo img {
+    width: 100px;
+    cursor: pointer;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 24px;
+    width: 50%;
+}
+
+.search-category {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 24px;
+    margin-right: 10px;
+}
+
+#search-input {
+    padding: 10px;
+    width: 70%;
+    border-radius: 24px;
+    border: none;
+}
+
+button {
+    padding: 10px;
+    background-color: #FF9900;
+    color: white;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.header-links {
+    display: flex;
+    gap: 15px;
+}
+
+.header-links a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Main Navigation */
+.main-nav {
+    background-color: #232F3E;
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    padding: 10px;
+}
+
+.main-nav ul li {
+    margin-right: 20px;
+}
+
+.main-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Dropdown Menu for "All" */
+.menu-dropdown {
+    position: relative;
+}
+
+.menu-dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background-color: #fff;
+    color: #000;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 100;
+}
+
+.dropdown-menu li {
+    padding: 10px 20px;
+}
+
+.dropdown-menu li a {
+    color: #232F3E;
+    text-decoration: none;
+}
 /**************** End Header Part */
 
 /**************** Start Slideshow container */

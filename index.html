@@ -10,6 +10,59 @@
 
 <body>
   <header id="startpage">
+    <!-- Logo and Search Bar -->
+    <div class="header-main">
+      <div class="logo">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon Logo">
+      </div>
+
+      <!-- Location Section -->
+      <div class="location">
+          <!-- Location Icon (FontAwesome) -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="location-icon" width="20" height="20">
+<path d="M256 8C114.6 8 0 114.6 0 256c0 72.9 42.8 182.1 109.5 288.6 49.2 75.2 103.3 133.8 146.5 182.6 2.3 2.9 4.6 5.8 7.1 8.7 2.5-2.9 4.8-5.8 7.1-8.7 43.2-48.8 97.3-107.4 146.5-182.6C469.2 438.1 512 328.9 512 256c0-141.4-114.6-248-256-248zm0 368c-88.4 0-160-71.6-160-160s71.6-160 160-160 160 71.6 160 160-71.6 160-160 160z"/>
+</svg>
+
+          <span>Deliver to Iraq</span>
+      </div>
+
+      <!-- Search Bar Section -->
+      <div class="search-container">
+          <select class="search-category">
+              <option>All</option>
+              <option>Electronics</option>
+              <option>Books</option>
+              <option>Clothing</option>
+              <option>Home</option>
+          </select>
+          <input type="text" id="search-input" placeholder="Search Amazon">
+          <button onclick="searchAmazon()">Search</button>
+      </div>
+
+      <!-- Language Section -->
+      <div class="language" onclick="toggleLanguageDropdown()">
+          <span id="language">EN</span> <i class="arrow-down"></i>
+          <ul id="language-dropdown" class="dropdown-hidden">
+              <li onclick="changeLanguage('EN')">EN</li>
+              <li onclick="changeLanguage('ES')">ES</li>
+              <li onclick="changeLanguage('FR')">FR</li>
+          </ul>
+      </div>
+
+      <!-- Header Links -->
+      <div class="header-links">
+          <a href="#">Hello, Sign in</a>
+          <a href="#">Returns & Orders</a>
+<!-- Shopping Cart Icon (SVG) -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="shopping-cart-icon" width="24" height="24">
+<path d="M7 4V2H4C2.9 2 2 2.9 2 4C2 5.1 2.9 6 4 6H5.21L6.29 9.22C6.44 9.54 6.71 9.76 7.03 9.88L13.53 12.88C13.86 13 14.18 13.18 14.3 13.51L15.9 16.21C16.02 16.44 16.17 16.65 16.34 16.83C16.52 17.01 16.72 17.15 16.93 17.25L19.93 18.76C20.07 18.85 20.2 18.91 20.34 18.94L21 19H20C18.9 19 18 19.9 18 21H6C6 19.9 5.1 19 4 19H2C2 19 2.07 19 2.1 19.01L3 19.27C3.32 19.55 3.72 19.8 4.1 20L6.7 16.89L6.7 16.9L4 5H18.83L17 10H14L13.28 6H7.72L7 4Z" fill="white"/>
+</svg>
+
+
+
+          <a href="#">Cart (0)</a>
+      </div>
+  </div>
     <ul>
       <li><a href="">&#9776; All</a></li>
       <li><a href="">Today's Deals</a></li>

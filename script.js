@@ -1,3 +1,21 @@
+// Function to toggle language dropdown visibility
+function toggleLanguageDropdown() {
+  const dropdown = document.getElementById("language-dropdown");
+  dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+}
+
+// Function to change the selected language
+function changeLanguage(language) {
+  const languageElement = document.getElementById("language");
+  languageElement.textContent = language;
+  toggleLanguageDropdown();  // Hide the dropdown after selecting a language
+}
+
+// Function to handle search (for now, just alerts the search term)
+function searchAmazon() {
+  const searchTerm = document.getElementById('search-input').value;
+  alert(`Searching for: ${searchTerm}`);
+}
 
 /////////////// Start Slideshow container ///////////////////
 let slideIndex = 1;
